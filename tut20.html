@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+</head>
+<style>
+    /* universal selector */
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        /* we can overwrite below */
+    }
+
+    .container {
+        background-color: bisque;
+        color: blue;
+        border: 3px solid #f13e25f0;
+
+        /* we can also set padding and margin like this  */
+        /* padding: 33px; */
+        /* padding-left: 23px;
+        padding-top: 19px; */
+        padding: 12px 23px 33px 15px;
+        /* padding=top right bottom left */
+        margin: 23px;
+        border-radius: 23px;
+        border-width: 5px;
+        width: 533px;
+    }
+
+    body {
+        background-color: #20d3d3;
+    }
+
+    #cool {
+        color: black;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <h3 id="cool">This is my heading</h3>
+        <br>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non perspiciatis assumenda dicta est
+            eius. Reprehenderit totam facilis neque fugit nulla! Laborum, distinctio alias!</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <br>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non perspiciatis assumenda dicta est
+            eius. Reprehenderit totam facilis neque fugit nulla! Laborum, distinctio alias!</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non perspiciatis assumenda dicta est
+            eius. Reprehenderit totam facilis neque fugit nulla! Laborum, distinctio alias!</p>
+    </div>
+
+</body>
+
+</html>

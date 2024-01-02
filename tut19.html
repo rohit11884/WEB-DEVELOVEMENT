@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, width, borders and background</title>
+</head>
+<style>
+    #para{
+        background-color: red;
+        height: 100px;
+        width: 369px;
+        border: 5px solid green;  /* we can also write like this instead of below methord*/
+        /* border-width: 4px;
+        border-color: green;
+        border-style: solid; */
+        border-radius: 13px;
+    }
+    #secondpara{
+        background-color: rgb(53, 181, 57);
+        height: 100px;
+        width: 369px;
+        border-top: 5px solid violet;
+        border-left: 5px solid red;
+        border-right: 5px solid yellow;
+        border-bottom: 5px solid orange;
+        border-top-left-radius: 13px;
+        border-width: 44px;
+       
+    }
+    #thirdpara{
+        height: 500px;
+        width: 669px;
+        border: 5px solid rgb(43, 41, 146); 
+        border-image: url('https://www.google.com/imgres?imgurl=https%3AC:\Users\rohit\OneDrive\Pictures\Saved Pictures\IMG_20230109_232952_740.jpgC:\Users\rohit\OneDrive\Pictures\Saved Pictures\IMG_20230109_232952_740.jpg%2Fhttps://unsplash.com/photos/orange-lamborghini-car-oUBjd22gF6w%2Fimages.squarespace-cdn.com%2Fcontent%2Fv1%2F51cdafc4e4b09eb676a64e68%2F1470951917131-VO6KK2XIFP4LPLCYW7YU%2FMcQueen15.jpg&tbnid=bKWKT626lQvfWM&vet=12ahUKEwiVuozmq4yCAxXIcWwGHakGBi4QMygaegUIARCoAQ..i&imgrefurl=https%3A%2F%2Fwww.pixar.com%2Ffeature-films%2Fcars&docid=z6k6HV1xPZyUWM&w=1500&h=835&q=cars&ved=2ahUKEwiVuozmq4yCAxXIcWwGHakGBi4QMygaegUIARCoAQ');    
+        background-repeat: no-repeat;
+        /* background-position: center top; */
+        background-position: 12px 45px;  /* (x,y) coordinate*/
+    }
+</style>
+<body>
+    <h2>This is heading</h2>
+    <p id="para">This is paragraph</p>
+
+    <h2>This is second heading</h2>
+    <p id="secondpara">This is my second paragraph</p>
+
+    <h2>This is third heading</h2>
+    <p id="thirdpara">This is my third paragraph</p>
+</body>
+</html>

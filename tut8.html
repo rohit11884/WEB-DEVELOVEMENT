@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>This is HTML forms tutorials</h2>
+    <form action="backend.php">
+        <label for="name">Name</label>  <!--  after we using "label for" ,if we click on the tag let's say "name" then it will automatically select the writting area -->
+        <!-- div is used to change the line -->
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <label for="myRole">Role</label>
+        <div>
+             <input type="text" name="myRole" id="myRole">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            <input type="date" name="mydate">
+        </div>
+        <br>
+        <div>
+            bonus: <input type="number" name="myBonus">
+        </div>
+        <br>
+        <div>
+            Are you eligible?: <input type="checkbox" name="myEligibility">
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="Radio" name="myGender"> Female <input type="Radio" name="myGender">
+        </div>
+        <br>
+        <div>
+            Write about yourself: <br> <textarea name="myText"  cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="none">None</option>
+                <option value="ind">Indica</option>
+                <option value="swft">Swift</option>
+                <option value="bmw">BMW</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" name="Submit Now">
+            <input type="Reset" name="Reset Now">
+        </div>
+    </form>
+</body>
+</html>

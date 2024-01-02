@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Noto+Sans:wght@300&family=Playfair+Display:wght@500&family=Playpen+Sans:wght@100&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    body {
+        font-family: 'Alumni Sans Collegiate One', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Playfair Display', serif;
+        font-family: 'Playpen Sans', cursive;
+    }
+
+    .container {
+        width: 900px;
+        border: 3px solid red;
+        margin: auto;
+        background: rgb(165, 227, 136);
+
+    }
+
+    .item {
+        border: 5px solid blue;
+        margin: 12px;
+        padding: 0px 0px 12px 23px;
+        background: rgb(107, 214, 233)
+    }
+
+    #fruit {
+        float: right;
+        width: 45%;
+    }
+
+    #computer {
+        float: left;
+        width: 42%;
+        /* text-align: justify; */
+    }
+
+    #stationary {
+        float: right;
+        width: 45%;
+
+    }
+
+    #stationary2 {
+        clear: both;
+        width: 75%;
+
+    }
+
+    p {
+        /* text-align: left;
+        text-align: center;
+        text-align: right; */
+        text-align: justify;
+    }
+
+    h1 {
+        margin: auto;
+        width: 455px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sapiente
+                expedita velit sed maxime delectus, placeat autem nisi dolore cupiditate minus perferendis optio odit
+                numquam totam, debitis dolorem non. Veniam.</p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sapiente
+                expedita velit sed maxime delectus, placeat autem nisi dolore cupiditate minus perferendis optio odit
+                numquam totam, debitis dolorem non. Veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="stationarypara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+                sapiente expedita velit sed maxime delectus, placeat autem nisi dolore cupiditate minus perferendis
+                optio odit numquam totam, debitis dolorem non. Veniam. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Perspiciatis eos nulla quod ea dolore veniam, recusandae, aut officia voluptatibus
+                minus quid.</p>
+        </div>
+
+        <div id="stationary2" class="item">
+            <h3>stationary</h3>
+            <p id="stationarypara2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+                sapiente expedita velit sed maxime delectus, placeat autem nisi dolore cupiditate minus perferendis
+                optio odit numquam totam, debitis dolorem non. Veniam.</p>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

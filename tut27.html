@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+</head>
+<style>
+    .box{
+        width: 170px;
+        height: 170px;
+        border: 2px solid black;
+
+    }
+    #box1{
+        background-color: red;
+        /* z-index will always work on relative,fixed,absolute,sticky position not on static position */
+        /* those who have lager z-indez value will come above smaller  */
+        z-index: 34;
+        position: relative;
+        top: 60px;
+        left: 10px;
+    }
+    #box2{
+        background-color: blue;
+        /* visibility: hidden;   --->> It will hide the element but will show the space  */
+        /* display: none;        --->> It will hide as well as not take space */
+        z-index: 30;
+        position: relative;
+        top: 14px;
+        left: 20px;
+    }
+    #box3{
+        background-color: yellow;
+    }
+    #box4{
+        background-color: orange;
+    }
+</style>
+<body>
+    <!-- div.box#box$*4  //---- it will create 4 div with class name box and id box1,2,..4 ---$ is use for number like 1,2,3. -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+
+</body>
+</html>

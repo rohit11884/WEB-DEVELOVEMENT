@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+</head>
+<style>
+    body{
+        background-color: rgb(154, 218, 77);
+    }
+    .container{
+        background-color: rebeccapurple;
+        height: 544px;
+        width: 100%;
+        border: 2px solid black;
+        /* Initialize the container as a flex box */
+        display: flex;
+        
+        /* lower code have more precedence than the upper one show lower code will override the upper one */
+
+        /* Flex properties for flex container */
+        
+        /* flex-direction: row; */
+        /* Default value of flex-direction: ; is row */
+
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row-reverse; */
+
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+
+        /* it will do the work of both flex-direction and flex-wrap --->> */
+        /* flex-flow: row-reverse wrap; */
+
+        /* it will put the content in the center  */
+        /* justify-content: center; */
+        
+        /* it will give the equal space between content  */
+        /* justify-content: space-between; */
+
+        /* it will give the equal space between content as well as start and end  */
+        /* justify-content: space-evenly; */
+
+        /* it will give the same amount of space to each content  */
+        /* justify-content: space-around; */
+
+
+        /* it will centre the content from all direction */
+        /* align-items: center; */
+
+        /* it will center the content from left,right,up  */
+        /* align-items: end; */
+
+        /* it will center the content from left,right,up */
+        /* It is by default */
+        /* align-items: start; */
+
+        /* align-items: stretch; */
+
+    }
+    .item{
+        width: 100px;
+        height: 100px;
+        background-color: tomato;
+        border: 2px solid green;
+        margin: 10px;
+        padding: 3px;
+    }
+    #item-1{
+        /* Flex property for a flex item  */
+
+        /* It will check the order of the content, higher the order number higher the place  */
+        /* matalab jiska order zada hoga woh baad me chle jaega */
+        order: 112;
+        flex-grow: 2;
+        flex-shrink: 2;
+    }
+    #item-2{
+        order: 20;
+        flex-grow: 1;
+        flex-shrink: 23;
+
+        /* when flex-direction: ; is set to row then flex-basis: ; will control width  */
+        /* when flex-direction: ; is set to column then flex-basis: ; will control height  */
+        flex-basis: 200px;
+    }
+    #item-3{
+        order:333;
+        align-self: flex-start;
+        align-self: center;
+        align-self:flex-end;
+    }
+</style>
+<body>
+    <h1>This is flexbox container</h1>  
+    <div class="container">
+        <div class="item" id="item-1">First box</div>
+        <div class="item" id="item-2">Second box</div>
+        <div class="item" id="item-3">Third box</div>
+        <!-- <div class="item" id="item-4">Fourth box</div>
+        <div class="item" id="item-5">Fifth box</div>
+        <div class="item" id="item-6">Sixth box</div> -->
+    </div>
+</body>
+</html>
