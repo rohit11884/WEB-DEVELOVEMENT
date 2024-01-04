@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+    .card{
+        padding: 22px 34px;
+        margin: 3px 40px;
+        /* border: 2px solid red; */
+        background-color: rgb(157, 236, 107);
+
+
+        /* it will be apply as x-offset, y-offset, blur radius, spread radiue, color. */
+        box-shadow: 10px 10px 15px 10px rgb(74, 72, 72);
+        /* box-shadow: -10px -10px 15px rgb(74, 72, 72); */
+        box-shadow: 10px 10px 10px rgb(74, 73, 73), 21px 15px 10px rgb(235, 22, 22);
+
+
+        /* it will increase the radius inward */
+        /* box-shadow: inset 10px 15px rgb(74, 72, 72); */
+    }
+
+    .card p{
+        /* it will be apply as x-offset, y-offset, blur radius, spread radiue, color. */
+        text-shadow: 4px 4px 2px rgb(255, 255, 255);
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2> <u>Card-3</u></h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto vel ipsa quas perferendis aliquam veritatis ipsum necessitatibus cum ea nulla reiciendis inventore accusamus delectus explicabo quis suscipit officia dolorum, amet sint rerum! Expedita, eligendi.</p>
+        </div>
+        <div class="card" id="card-2">
+           <h2> <u>Card-3</u></h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, similique molestias ipsa, vero tempora vitae possimus aut temporibus minus dolor obcaecati, atque distinctio commodi consequatur recusandae ab quos. Quaerat odit ipsam molestiae quasi atque!</p>
+    
+        </div>
+        <div class="card" id="card-3">
+           <h2> <u>Card-3</u></h2>
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et architecto nisi pariatur! Laborum tempore, quis veniam, nisi omnis hic illum excepturi cupiditate perspiciatis similique a aliquid consequuntur, odio blanditiis quasi quos id ea! Adipisci.</p>
+    
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selectors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Merriweather:wght@300&family=Noto+Sans:wght@300&family=Playfair+Display:wght@500&family=Playpen+Sans:wght@100&family=Poppins:wght@300;800&family=Quicksand:wght@300&family=Roboto+Condensed:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0 ;
+        background-color: black;
+        color: white;
+    }
+    header::before{
+        background: url('https://images.unsplash.com/photo-1623278666629-9d2db409231a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.6;
+
+    }
+
+    section {
+        /* border: 2px solid green; */
+        display: flex;
+        flex-direction: column;
+        margin: -12px 34px;
+        align-items: center;
+        height: 344px;
+        justify-content: center;
+        /* It will center the content from all side */
+
+    }
+
+    p {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    /* section::before {
+        content: "This is content";
+        color: chartreuse;
+        background-color: rebeccapurple;
+    } */
+
+    /* section::after {
+        content: "This is after content";
+        background-color: aqua;
+        color: black;
+    } */
+
+    .navigation {
+        font-family: 'Alumni Sans Collegiate One', sans-serif;
+        font-family: 'Merriweather', serif;
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Playfair Display', serif;
+        font-family: 'Playpen Sans', cursive;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Quicksand', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        display: flex;
+        font-size: 20px;
+        margin: -12px;
+    }
+
+    li {
+        list-style: none;
+        padding: 34px 23px;
+    }
+</style>
+<header>
+<body>
+    <nav class="navbar">
+        <ul class="navigation">
+            <li class="item">Home</li>
+            <li class="item">About</li>
+            <li class="item">Services</li>
+            <li class="item">Contact Us</li>
+        </ul>
+    </nav>
+</header>
+    <section>
+        <h1>Welcome to Coding world</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ea consectetur ipsa hic. Vero natus,
+            molestiae accusantium labore possimus nostrum quod blanditiis non fugiat repudiandae dignissimos voluptatem
+            ratione, illo earum id aperiam veniam obcaecati?</p>
+    </section>
+    
+</body>
+
+</html>

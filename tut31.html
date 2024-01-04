@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+</head>
+<style>
+    h1{
+        background-color: rgb(103, 237, 134);
+        color: black;
+        font-weight: bold;
+        text-align: center;
+    }
+    /* div p{
+        color: rgb(215, 79, 174);
+        font-weight: bold ;
+        background-color: rgb(107, 224, 107);
+    } */
+    /* div li p{
+        background-color: aqua;
+        color:white;
+        font-weight: bold;
+    } */
+
+    /* div li p{
+        background-color: aqua;
+        color: cornflowerblue;
+        font-weight: bold;
+    }  */
+    
+
+    /* It will apply only on element p who is right inside div  */
+
+    /* div > p{    
+            color: gray;
+            background-color: yellow;
+    } */
+
+    /* It will apply only on the p whose just above is div  */
+    
+    div + p{    
+            color: white;
+            background-color: rgb(229, 84, 84);
+    }
+</style>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is another paragraph in li</p></li>
+                <li>This is not in paragraph</li>
+                <p>ghgh</p>
+            </ul>
+            <p>This is inner paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+        <p>This is one another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+</html>

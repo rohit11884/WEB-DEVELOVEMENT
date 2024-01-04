@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css variables / Custome properties</title>
+</head>
+<style>
+    /* creating universal variable */
+    :root{
+        --uni-box-color: rgb(128, 96, 189);
+        --maxh:733px;
+        --maxw:444px;
+    }
+    .container{
+        display: flex;
+
+        /* It will not work because we have created the variable in the box, so its scope is only in the box. */
+        background-color: var(--box-color);
+        align-items: center;
+        justify-content: center;
+    }
+    .box{
+        /* creating variable */
+        --box-color:yellowgreen;
+        width: 200px;
+        height: 200px;
+        background-color: var(--box-color);
+        border: 2px solid red;
+        margin: 20px 20px ;
+        padding: 30px 30px;
+        box-shadow: 3px 3px var(--uni-box-color);
+        max-width: var(--maxw);
+        margin: 2px 33px;
+        
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>
