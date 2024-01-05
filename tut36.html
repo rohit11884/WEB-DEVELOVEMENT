@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key frames and Animation</title>
+</head>
+<style>
+    .container{
+       background-color: yellow;
+
+    }
+    h1{
+        padding: 50px;
+    }
+
+    /* .box{
+        background-color: greenyellow;
+        width: 250px;
+        height: 250px;
+        position: relative;
+        animation-name: rohit1;
+        animation-duration: 2s;
+        it will count how many time sanimation will work 
+        animation-iteration-count: 1;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        animation-fill-mode: alternate;
+        animation-timing-function: ease-in;
+        animation-timing-function: ease-out;
+        animation-delay: 2s;
+        animation-direction: reverse;
+    } */
+    .box1{
+        background-color: red;
+        width: 250px;
+        height: 250px;
+        position: relative;
+        animation-name: rohit2;
+        animation-duration: 3s;
+        animation-iteration-count: 20;
+        /* animation-fill-mode: alternate; */
+        /* animation-timing-function: ease-out; */
+        /* animation-direction: reverse; */
+
+         /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+
+    }
+    @keyframes rohit1 {
+        from{
+            width: 200px;
+            color: black;
+            background-color: cadetblue;
+        }
+        to{
+            width: 800px;
+            background-color: blueviolet;
+        }
+    }
+    @keyframes rohit2 {
+        0%{
+            top: 0px;
+            left: 0px;
+        }
+        25%{
+            top: 250px;
+            left: 0px;
+        }
+        50%{
+            top: 250px;
+            left: 250px;
+        }
+        75%{
+            top: 250px;
+            left: 0px;
+        }
+        100%{
+           
+            top: 0px;
+            left: 0px;
+        }
+        
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+        <div class="box1">
+            <h1>Not this bitch</h1>
+        </div>
+    </div>
+    
+</body>
+</html>
